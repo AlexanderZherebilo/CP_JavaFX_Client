@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.view.Admin.AdminMenu">
+   <children>
+      <AnchorPane prefHeight="67.0" prefWidth="607.0" style="-fx-background-color: rgb(100, 100, 200);">
+         <children>
+            <Label layoutX="124.0" layoutY="11.0" text="Меню администратора" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="ClientsMenu" layoutX="14.0" layoutY="107.0" mnemonicParsing="false" onAction="#onClientsMenuPressed" prefHeight="25.0" prefWidth="131.0" text="Меню клиентов &gt;&gt;" />
+      <Button fx:id="CreditsMenu" layoutX="14.0" layoutY="150.0" mnemonicParsing="false" onAction="#OnCreditsMenuPressed" prefHeight="25.0" prefWidth="131.0" text="Меню кредитов&gt;&gt;" />
+      <Button fx:id="CurrencyMenu" layoutX="14.0" layoutY="188.0" mnemonicParsing="false" onAction="#OnCurrencyMenuPressed" prefHeight="25.0" prefWidth="131.0" text="Курсы валют" />
+      <Button fx:id="UsersMenu" alignment="CENTER" layoutX="14.0" layoutY="287.0" mnemonicParsing="false" onAction="#OnUsersMenuPressed" prefHeight="45.0" prefWidth="131.0" text="Управление пользователями" textAlignment="CENTER" wrapText="true" />
+      <TextArea editable="false" layoutX="401.0" layoutY="87.0" prefHeight="200.0" prefWidth="200.0" text="Вы вошли от имени администратора. Вам доступны возможности просмотра и редактирования сведений о клиентах и кредитах, а также возможность управления пользователями" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="ExitButton" layoutX="44.0" layoutY="341.0" mnemonicParsing="false" onAction="#OnExitButtonPressed" prefHeight="45.0" prefWidth="71.0" style="-fx-background-color: rgb(255, 100, 100);" text="Выйти">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="ListOfClients" layoutX="168.0" layoutY="97.0" mnemonicParsing="false" onAction="#OnListOfClientsPressed" prefHeight="45.0" prefWidth="103.0" text="Вывести список клиентов" textAlignment="CENTER" visible="false" wrapText="true" />
+      <Button fx:id="AddClient" layoutX="170.0" layoutY="165.0" mnemonicParsing="false" onAction="#OnAddClientPressed" prefHeight="45.0" prefWidth="103.0" text="Добавить клиента" textAlignment="CENTER" visible="false" wrapText="true" />
+      <Button fx:id="ListOfCredits" layoutX="286.0" layoutY="97.0" mnemonicParsing="false" onAction="#OnListOfCreditsPressed" prefHeight="45.0" prefWidth="103.0" text="Вывести список кредитов" textAlignment="CENTER" visible="false" wrapText="true" />
+      <Button fx:id="AddCredit" layoutX="288.0" layoutY="166.0" mnemonicParsing="false" onAction="#OnAddCreditPressed" prefHeight="45.0" prefWidth="103.0" text="Добавить кредит" textAlignment="CENTER" visible="false" wrapText="true" />
+      <Button fx:id="GiveCredit" layoutX="289.0" layoutY="229.0" mnemonicParsing="false" onAction="#OnGiveCreditPressed" prefHeight="45.0" prefWidth="103.0" text="Выдача кредитов" textAlignment="CENTER" visible="false" wrapText="true" />
+      <Button fx:id="EPSButton" layoutX="14.0" layoutY="229.0" mnemonicParsing="false" onAction="#OnEPSButtonPressed" prefHeight="45.0" prefWidth="131.0" text="Произвести расчёт ЭПС" textAlignment="CENTER" wrapText="true" />
+      <Button fx:id="ShowCurDiagram" layoutX="275.0" layoutY="299.0" mnemonicParsing="false" onAction="#OnShowDgPressed" prefHeight="67.0" prefWidth="131.0" text="Показать диаграмму валют выданных кредитов" textAlignment="CENTER" visible="false" wrapText="true" />
+   </children>
+</AnchorPane>

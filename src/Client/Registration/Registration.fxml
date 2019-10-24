@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Registration.Registration">
+   <children>
+      <AnchorPane prefHeight="82.0" prefWidth="600.0" style="-fx-background-color: black;">
+         <children>
+            <Label layoutX="172.0" layoutY="23.0" text="Окно регистрации" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold Italic" size="31.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="newloginfield" alignment="CENTER" layoutX="191.0" layoutY="147.0" prefHeight="25.0" prefWidth="218.0" promptText="Введите новый логин" />
+      <Button fx:id="ReadyRegistrationButton" layoutX="191.0" layoutY="330.0" mnemonicParsing="false" onAction="#OnReadyButtonPressed" prefHeight="56.0" prefWidth="96.0" text="Готово">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="CancelButton" layoutX="313.0" layoutY="330.0" mnemonicParsing="false" onAction="#OnCancelButtonPressed" prefHeight="56.0" prefWidth="96.0" text="Отмена">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="newpasswordfield" alignment="CENTER" layoutX="191.0" layoutY="188.0" prefHeight="25.0" prefWidth="218.0" promptText="Введите новый пароль" />
+      <PasswordField fx:id="repeatnewpassword" alignment="CENTER" layoutX="191.0" layoutY="230.0" prefHeight="25.0" prefWidth="218.0" promptText="Повторите новый пароль" />
+      <Label layoutX="68.0" layoutY="82.0" prefHeight="65.0" prefWidth="490.0" text="Введите логин и пароль нового пользователя Укажите себя в списке клиентов" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="Surname" layoutX="191.0" layoutY="289.0" onAction="#OnSurnamePressed" prefHeight="25.0" prefWidth="135.0" />
+      <TextField fx:id="ID" editable="false" layoutX="335.0" layoutY="289.0" prefHeight="25.0" prefWidth="72.0" />
+      <Label layoutX="191.0" layoutY="265.0" text="Фамилия:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="335.0" layoutY="265.0" text="ID:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

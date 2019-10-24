@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="CP (client):jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CP__client__jar</output-path>
+    <root id="archive" name="CP (client).jar">
+      <element id="module-output" name="CP (client)" />
+    </root>
+  </artifact>
+</component>

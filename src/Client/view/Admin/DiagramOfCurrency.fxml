@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.view.Admin.DiagramOfCurrency">
+   <children>
+      <PieChart fx:id="DiagramOfCurrency" layoutX="50.0" prefHeight="325.0" prefWidth="504.0" title="Доли валют выданных кредитов" />
+      <Button fx:id="Ok" layoutX="261.0" layoutY="346.0" mnemonicParsing="false" onAction="#OkPressed" prefHeight="40.0" prefWidth="82.0" text="ОК">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

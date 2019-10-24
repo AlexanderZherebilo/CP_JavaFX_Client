@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="532.0" prefWidth="602.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.view.Admin.GiveCredit">
+   <children>
+      <AnchorPane prefHeight="45.0" prefWidth="602.0" style="-fx-background-color: rgb(100, 100, 200);">
+         <children>
+            <Label layoutX="213.0" layoutY="5.0" text="Выдача кредита" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="17.0" layoutY="119.0" text="ID клиента">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="161.0" text="Название кредита">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="371.0" text="Частота выплат (в год)">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="416.0" text="Сумма кредита" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Frequency" layoutX="289.0" layoutY="368.0" />
+      <TextField fx:id="CreditSumm" layoutX="289.0" layoutY="413.0" />
+      <Button fx:id="Ready" layoutX="165.0" layoutY="459.0" mnemonicParsing="false" onAction="#OnReadyPressed" prefHeight="59.0" prefWidth="116.0" text="Готово">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="CreditName" layoutX="287.0" layoutY="158.0" onAction="#OnCreditNameChosen" prefWidth="150.0" />
+      <Button fx:id="Cancel" layoutX="331.0" layoutY="459.0" mnemonicParsing="false" onAction="#OnCancelPressed" prefHeight="59.0" prefWidth="116.0" text="Отмена">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="ClientSurname" layoutX="287.0" layoutY="71.0" onAction="#OnClientSurnameChosen" prefWidth="150.0" />
+      <Label layoutX="16.0" layoutY="74.0" text="Фамилия клиента">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="208.0" text="ID кредита">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ClientID" editable="false" layoutX="287.0" layoutY="116.0" />
+      <TextField fx:id="CreditID" editable="false" layoutX="287.0" layoutY="205.0" />
+      <Label layoutX="15.0" layoutY="251.0" text="Номинальная процентная ставка (%)">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NominalRate" editable="false" layoutX="288.0" layoutY="249.0" />
+      <DatePicker fx:id="GivenCredit" layoutX="288.0" layoutY="288.0" />
+      <DatePicker fx:id="ReturnedCredit" layoutX="288.0" layoutY="328.0" />
+      <Label layoutX="16.0" layoutY="292.0" text="Дата выдачи кредита">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="331.0" text="Срок выплаты кредита">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

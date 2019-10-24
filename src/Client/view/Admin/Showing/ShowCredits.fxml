@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="765.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.view.Admin.Showing.ShowCredits">
+   <children>
+      <TableView fx:id="Credits" prefHeight="283.0" prefWidth="765.0">
+         <columns>
+            <TableColumn fx:id="CreditID" editable="false" prefWidth="85.0" text="ID Кредита" />
+            <TableColumn fx:id="CreditName" prefWidth="169.0" text="Название Кредита" />
+            <TableColumn fx:id="CreditMaxSumm" prefWidth="149.0" text="Максимальная Сумма" />
+            <TableColumn fx:id="CreditCurrencyID" prefWidth="135.0" text="ID Валюты" />
+            <TableColumn fx:id="CreditNominalRate" prefWidth="226.0" text="Номинальная процентная ставка" />
+         </columns>
+      </TableView>
+      <Button fx:id="EditButton" layoutX="56.0" layoutY="312.0" mnemonicParsing="false" onAction="#OnEditButtonPressed" prefHeight="30.0" prefWidth="118.0" text="Редактировать" />
+      <Button fx:id="DeleteButton" layoutX="56.0" layoutY="353.0" mnemonicParsing="false" onAction="#OnDeleteButtonPressed" prefHeight="25.0" prefWidth="118.0" text="Удалить" />
+      <Button fx:id="CloseButton" layoutX="632.0" layoutY="311.0" mnemonicParsing="false" onAction="#OnCloseButtonPressed" prefHeight="63.0" prefWidth="126.0" text="&lt;&lt; Закрыть">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="Criteries" layoutX="193.0" layoutY="330.0" prefWidth="150.0" />
+      <TextField fx:id="min" layoutX="391.0" layoutY="330.0" prefHeight="25.0" prefWidth="104.0" />
+      <Label layoutX="367.0" layoutY="300.0" text="Интервал:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="193.0" layoutY="300.0" text="Критерий поиска:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="SearchButton" layoutX="391.0" layoutY="362.0" mnemonicParsing="false" onAction="#OnSearchButtonPressed" text="Найти" />
+      <Label layoutX="367.0" layoutY="330.0" text="от">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="498.0" layoutY="330.0" text="до">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="max" layoutX="518.0" layoutY="330.0" prefHeight="25.0" prefWidth="104.0" />
+      <Label layoutX="193.0" layoutY="362.0" text="Валюта:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="Currency" layoutX="268.0" layoutY="362.0" prefHeight="25.0" prefWidth="82.0" />
+      <Button fx:id="SaveReport" layoutX="458.0" layoutY="362.0" mnemonicParsing="false" onAction="#OnSaveReportPressed" prefHeight="25.0" prefWidth="164.0" text="Сохранить отчёт в файл" />
+   </children>
+</AnchorPane>

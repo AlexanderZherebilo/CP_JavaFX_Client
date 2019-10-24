@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.view.Converter">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="-1.0" prefHeight="65.0" prefWidth="608.0" style="-fx-background-color: rgb(100, 200, 100);">
+         <children>
+            <Label layoutX="196.0" layoutY="15.0" text="Конвертер валюты">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="ReadyButton" layoutX="241.0" layoutY="302.0" mnemonicParsing="false" onAction="#OnReadyButtonPressed" prefHeight="63.0" prefWidth="126.0" text="Готово">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="125.0" layoutY="129.0" text="Из:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="CurrencyOne" layoutX="155.0" layoutY="129.0" prefHeight="25.0" prefWidth="74.0" />
+      <Label layoutX="428.0" layoutY="127.0" text="В:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="CurrencyTwo" layoutX="448.0" layoutY="127.0" prefHeight="25.0" prefWidth="74.0" />
+      <TextField fx:id="Data" layoutX="134.0" layoutY="166.0" prefHeight="25.0" prefWidth="95.0" />
+      <Label layoutX="75.0" layoutY="166.0" text="Сумма:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="366.0" layoutY="164.0" text="Результат:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Result" editable="false" layoutX="448.0" layoutY="164.0" prefHeight="25.0" prefWidth="95.0" />
+      <Button fx:id="GetConvert" layoutX="241.0" layoutY="215.0" mnemonicParsing="false" onAction="#OnGetConvertPressed" prefHeight="36.0" prefWidth="126.0" text="Конвертировать">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

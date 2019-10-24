@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="1188.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.view.Admin.Showing.ShowGivenCredits">
+   <children>
+      <TableView fx:id="ClientsCredits" prefHeight="305.0" prefWidth="1188.0">
+         <columns>
+            <TableColumn fx:id="ClientID" editable="false" prefWidth="69.0" text="IDКлиента" />
+            <TableColumn fx:id="CreditID" editable="false" prefWidth="66.0" text="IDКредита" />
+            <TableColumn fx:id="ClientSurname" editable="false" prefWidth="96.0" text="Фамилия" />
+            <TableColumn fx:id="CreditName" editable="false" prefWidth="170.0" text="Кредит" />
+            <TableColumn fx:id="NominalRate" editable="false" prefWidth="122.0" text="Номинальная проц. ст." />
+            <TableColumn fx:id="CreditGiven" editable="false" prefWidth="122.0" text="Дата получения" />
+            <TableColumn fx:id="CreditReturned" editable="false" minWidth="2.0" prefWidth="97.0" text="Срок выплаты" />
+            <TableColumn fx:id="Frequency" editable="false" prefWidth="99.0" text="Частота выплат (в год)" />
+            <TableColumn fx:id="CreditSumm" editable="false" prefWidth="84.0" text="Сумма" />
+            <TableColumn fx:id="EffectiveRate" prefWidth="47.0" text="ЭПС" />
+            <TableColumn fx:id="TotalPayments" prefWidth="115.0" text="Общая сумма выплат" />
+            <TableColumn fx:id="PiecePayments" editable="false" prefWidth="100.0" text="Размер разовых выплат" />
+         </columns>
+      </TableView>
+      <Button fx:id="DeleteButton" layoutX="82.0" layoutY="331.0" mnemonicParsing="false" onAction="#OnDeleteButtonPressed" prefHeight="44.0" prefWidth="145.0" text="Удалить" />
+      <Button fx:id="CloseButton" layoutX="1015.0" layoutY="321.0" mnemonicParsing="false" onAction="#OnCloseButtonPressed" prefHeight="63.0" prefWidth="126.0" text="&lt;&lt; Закрыть">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="GiveButton" layoutX="501.0" layoutY="331.0" mnemonicParsing="false" onAction="#OnGiveButtonPressed" prefHeight="44.0" prefWidth="145.0" text="Выдать кредит" wrapText="true" />
+      <Button fx:id="SaveReport" layoutX="748.0" layoutY="331.0" mnemonicParsing="false" onAction="#OnSaveReportPressed" prefHeight="44.0" prefWidth="145.0" text="Сохранить отчёт в файл" textAlignment="CENTER" wrapText="true" />
+   </children>
+</AnchorPane>
